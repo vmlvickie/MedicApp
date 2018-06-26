@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.octrinsic.medicalapp.EditProfile"
+    tools:showIn="@layout/activity_edit_profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/mybutton"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/fnameRegister_string"
+                android:textStyle="bold"
+                android:id="@+id/text_fname"
+                android:layout_marginTop="25dp" />
+
+            <EditText
+                android:width="300dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/etFname" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/lnameString"
+                android:id="@+id/text_lname"  />
+
+
+            <EditText
+                android:width="300dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/etLastName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/phoneString"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:id="@+id/text_phone"
+                />
+
+            <EditText
+                android:width="300dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/etPhone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/emailString"
+                android:textStyle="bold"
+                android:id="@+id/text_email"
+                />
+
+            <EditText
+                android:width="300dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/etEmail" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/previous_password"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:id="@+id/password_reg"
+                />
+            <EditText
+                android:width="300dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/etPrevious_password" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/new_password"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:id="@+id/confirm_password" />
+
+            <EditText
+                android:width="300dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/etnew_password" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="#ffffff"
+                android:textSize="10pt"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:background="@drawable/ovalshape"
+                android:textColorLink="#f627ff"
+                android:onClick="onSave"
+                android:id="@+id/btn_register" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

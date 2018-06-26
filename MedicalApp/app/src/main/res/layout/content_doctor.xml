@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mybutton"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.octrinsic.medicalapp.Doctor"
+    tools:showIn="@layout/activity_doctor"
+    android:onClick="onClickMedicalResources">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Welcom to your Profile"
+            android:id="@+id/textView31"
+            android:layout_marginTop="20dp"
+            android:textColor="#006295"
+            android:layout_above="@+id/tvCount"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="70dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:textColor="#000"
+            android:id="@+id/tvCount"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_above="@+id/btnViewAppointments"
+            android:layout_alignRight="@+id/btnViewAppointments"
+            android:layout_alignEnd="@+id/btnViewAppointments"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="right" />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appointments"
+                android:width="250dp"
+                android:id="@+id/btnViewAppointments"
+                android:onClick="goViewAppointments"
+                android:background="@drawable/ovalshape"
+                android:layout_marginTop="0dp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:layout_above="@+id/btnCurrentQue"
+                android:layout_marginBottom="75dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="View Current Queue"
+        android:background="@drawable/ovalshape"
+        android:width="250dp"
+            android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:id="@+id/btnCurrentQue"
+        android:onClick="goCurrentQueue"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnViewAppointments"
+        android:layout_alignStart="@+id/btnViewAppointments"
+        android:layout_alignRight="@+id/btnViewAppointments"
+        android:layout_alignEnd="@+id/btnViewAppointments" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medical information sources"
+        android:background="@drawable/ovalshape"
+        android:id="@+id/btnMedicalResources"
+        android:width="250dp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:onClick="onClickMedical_Sources"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="132dp"
+        android:layout_alignLeft="@+id/btnCurrentQue"
+        android:layout_alignStart="@+id/btnCurrentQue"
+        android:layout_alignRight="@+id/btnCurrentQue"
+        android:layout_alignEnd="@+id/btnCurrentQue" />
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/mybutton"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.octrinsic.medicalapp.LoginRegister"
+    tools:showIn="@layout/activity_login_register"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please Login "
+        android:textStyle="bold"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textColor="#006295"
+        android:id="@+id/textView15"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#006295"
+        android:id="@+id/etEmail"
+        android:hint="Username"
+        android:layout_below="@+id/textView15"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="250dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:layout_below="@+id/etEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/or_string"
+        android:textStyle="bold"
+        android:textColor="#006295"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        style="bold"
+        android:width="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textSize="8pt"
+        android:background="@drawable/ovalshape"
+        android:onClick="logIn"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textColor="#ffffff"
+        android:id="@+id/button"
+        android:layout_marginTop="49dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:width="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textSize="8pt"
+        android:background="@drawable/ovalshape"
+        android:id="@+id/button2"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:onClick="onRegisterUser"
+        android:layout_below="@+id/textView19"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:gravity="center_horizontal" />
+</RelativeLayout>

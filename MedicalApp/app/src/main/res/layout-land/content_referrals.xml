@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mybutton"
+    android:paddingLeft="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Refer Patient"
+            android:id="@+id/textView6"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal" />
+<TextView
+    android:layout_width="match_parent"
+    android:paddingLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="@string/facility"
+    android:id="@+id/spFacility"
+    android:textStyle="bold"
+    android:layout_below="@+id/textView6"
+    android:layout_toStartOf="@+id/textView6"
+    android:layout_gravity="center_vertical" />
+
+<Spinner
+    android:layout_width="wrap_content"
+    android:paddingLeft="20dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/sp_facility"
+    android:layout_marginBottom="67dp"
+    android:layout_alignBottom="@+id/spFacility"
+    android:layout_toRightOf="@+id/spFacility"
+    android:layout_toEndOf="@+id/spFacility" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="@string/Referred_doctor"
+    android:paddingLeft="20dp"
+    android:textStyle="bold"
+    android:id="@+id/txtDoc"
+    android:layout_alignBottom="@+id/spFacility"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<Spinner
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/sp_Doctor"
+    android:paddingLeft="20dp"
+    android:layout_below="@+id/txtDoc"
+    android:layout_alignRight="@+id/sp_facility"
+    android:layout_alignEnd="@+id/sp_facility"
+    android:layout_alignLeft="@+id/txtDoc"
+    android:layout_alignStart="@+id/txtDoc" />
+
+
+<Button
+    android:width="150dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/submit"
+    android:layout_marginTop="30dp"
+    android:textStyle="bold"
+    android:textColor="#ffffff"
+    android:textSize="10pt"
+    android:background="@drawable/ovalshape"
+    android:id="@+id/SubmitBtn"
+    android:onClick="onClickRefer"
+    android:layout_below="@+id/sp_Doctor"
+    android:layout_alignRight="@+id/textView6"
+    android:layout_alignEnd="@+id/textView6" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

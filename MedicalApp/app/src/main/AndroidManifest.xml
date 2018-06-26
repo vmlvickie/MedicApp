@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.octrinsic.medicalapp">
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="N" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Registration"
+            android:label="@string/title_activity_patient_reg"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Administrator"
+            android:label="@string/admin_string"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Patient"
+            android:label="@string/title_activity_patient"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Doctor"
+            android:label="@string/title_activity_doctor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Booking"
+            android:label="@string/title_activity_booking"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DisplayAppointments"
+            android:label="@string/title_activity_doctor_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PatientView"
+            android:label="@string/title_activity_patient_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Queue"
+            android:label="@string/title_activity_queue"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Appointment"
+            android:label="@string/title_activity_appointment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Referrals"
+            android:label="@string/title_activity_referrals"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginRegister"
+            android:label="@string/title_activity_login_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SuggestTime"
+            android:label="@string/title_activity_time_picker1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DoctorLogin"
+            android:label="@string/title_activity_doctor_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Medical_Sources"
+            android:label="@string/title_activity_medical__sources"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Demographics"
+            android:label="@string/title_activity_biodata"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditDemographics"
+            android:label="@string/title_activity_edit_UserData"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditProfile"
+            android:label="@string/title_activity_edit_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".CheckForRefferrals"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".RefferralView"
+            android:label="@string/title_activity_refferral_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PatientViewReferrals"
+            android:label="@string/title_activity_patient_view_referrals"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DoctorEditDetails"
+            android:label="@string/title_activity_doctor_edit_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".NotificationsService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".NotificationInfo"
+            android:label="@string/title_activity_notification_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

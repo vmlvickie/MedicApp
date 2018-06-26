@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mybutton"
+    android:paddingLeft="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/facility"
+        android:id="@+id/spFacility"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView6"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_facility"
+        android:layout_below="@+id/spFacility"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@+id/sp_Doctor"
+        android:layout_alignStart="@+id/sp_Doctor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Referred_doctor"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtDoc"
+        android:layout_below="@+id/sp_facility"
+        android:layout_toLeftOf="@+id/SubmitBtn"
+        android:layout_toStartOf="@+id/SubmitBtn" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_Doctor"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/txtDoc"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textColor="#ffffff"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:background="@drawable/ovalshape"
+        android:id="@+id/SubmitBtn"
+        android:onClick="onClickRefer"
+        android:layout_marginTop="67dp"
+        android:layout_below="@+id/sp_Doctor"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Refer Patient"
+        android:id="@+id/textView6"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

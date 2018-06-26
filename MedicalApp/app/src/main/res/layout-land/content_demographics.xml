@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@drawable/mybutton"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Demographics"
+    tools:showIn="@layout/activity_demographics">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="100dp"
+            android:paddingLeft="100dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Please Enter Details"
+                    android:id="@+id/textView26"
+                    android:textColor="#006295"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Age:"
+                android:id="@+id/textView27"
+                android:layout_marginLeft="39dp"
+                android:layout_marginStart="39dp"
+                android:layout_marginTop="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:width="50dp"
+                android:maxLength="3"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView27"
+                android:layout_alignLeft="@+id/textView27"
+                android:layout_alignStart="@+id/textView27"
+                android:id="@+id/etAge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Gender:"
+                android:id="@+id/textView28"
+                android:layout_marginTop="32dp"
+                android:layout_below="@+id/etAge"
+                android:layout_alignLeft="@+id/etAge"
+                android:layout_alignStart="@+id/etAge" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spGender"
+                android:layout_below="@+id/textView28"
+                android:layout_alignLeft="@+id/textView28"
+                android:layout_alignStart="@+id/textView28"
+                android:spinnerMode="dropdown"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Weight(kgs):"
+                android:id="@+id/textView29"
+                android:layout_below="@+id/spGender"
+                android:layout_alignLeft="@+id/spGender"
+                android:layout_alignStart="@+id/spGender" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:width="50dp"
+                android:maxLength="4"
+                android:layout_height="wrap_content"
+                android:id="@+id/etWeight"
+                android:layout_below="@+id/textView29"
+                android:layout_alignLeft="@+id/textView29"
+                android:layout_alignStart="@+id/textView29" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Height(meters):"
+                android:id="@+id/textView30"
+                android:layout_below="@+id/etWeight"
+                android:layout_alignLeft="@+id/etWeight"
+                android:layout_alignStart="@+id/etWeight"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:width="50dp"
+                android:maxLength="4"
+                android:layout_height="wrap_content"
+                android:id="@+id/etHeigt"
+                android:layout_below="@+id/textView30"
+                android:layout_alignLeft="@+id/textView29"
+                android:layout_alignStart="@+id/textView29" />
+
+            <Button
+                android:width="150dp"
+                android:layout_width="wrap_content"
+                android:height="60dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:textSize="10pt"
+                android:background="@drawable/ovalshape"
+                android:layout_below="@+id/etHeigt"
+                android:layout_alignLeft="@+id/textView29"
+                android:layout_alignStart="@+id/textView29"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="onSubmitDemographics"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

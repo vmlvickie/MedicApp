@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mybutton"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.octrinsic.medicalapp.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView5"
+        android:fillViewport="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="1"
+        android:paddingBottom="30dp">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="250dp"
+    android:id="@+id/linearLayout"
+    android:layout_marginLeft="0dp"
+    android:orientation="vertical"
+    android:layout_marginTop="150dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mims_logo"
+        android:layout_margin="20dp"/>
+</LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:width="350dp"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textColor="#ffff"
+            android:background="@drawable/ovalshape"
+            android:textColorLink="#76ff8f"
+            android:textSize="9pt"
+            android:id="@+id/btnLoginRegister"
+            android:onClick="onLoginRegister"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:text="@string/doctor"
+            android:textSize="9pt"
+            android:textColor="#ffff"
+            android:background="@drawable/ovalshape"
+            android:onClick="onClickDoctor"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

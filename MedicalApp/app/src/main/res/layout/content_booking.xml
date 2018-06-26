@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mybutton">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:weightSum="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/facility_string"
+            android:id="@+id/text_facility" />
+
+        <Spinner
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spFacilities"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Speciality"
+            android:id="@+id/textView38" />
+
+        <Spinner
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:id="@+id/spDoctorType" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/docstring"
+            android:id="@+id/textdoctor" />
+
+        <Spinner
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spDoctorsName"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/daystring"
+            android:id="@+id/text_time" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTimes"
+            android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/appointmentString"
+            android:id="@+id/tvDateOfAppointment" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+                android:height="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:layout_height="30dp"
+                android:text="@string/choose_datee"
+                android:textColor="#ffffff"
+                android:id="@+id/btnDate"
+                android:background="@drawable/ovalshape"
+                android:onClick="onChooseDate"
+                android:nestedScrollingEnabled="false" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/etDateOfAppointment"
+                android:layout_gravity="center"
+                android:inputType="date" />
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/FnameString"
+            android:id="@+id/textfname"
+            android:layout_marginTop="35dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="250dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFname" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/lname_String"
+            android:id="@+id/textlname" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="250dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etLname" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/patientType"
+            android:id="@+id/patientType" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Self"
+                android:id="@+id/selfBtn"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/others"
+                android:id="@+id/otherBtn"
+                android:checked="false" />
+        </RadioGroup>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/other">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:textSize="10pt"
+                android:text="Enter Details"
+                android:textStyle="bold"
+                android:id="@+id/tvDetails"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="First Name:"
+                android:textStyle="bold"
+                android:textSize="8pt"
+                android:layout_marginTop="10dp"
+                android:id="@+id/fnameTv"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:width="250dp"
+                android:id="@+id/firstnameTv"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Last Name:"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/lnameTv"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:inputType="textPersonName"
+                android:id="@+id/lastnameTv"
+                android:width="250dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Relationship"
+                android:textSize="10pt"
+                android:layout_marginTop="20dp"
+                android:id="@+id/relationTv"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:id="@+id/spinnerRealtionship"
+                android:dropDownWidth="200dp">
+
+            </Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Age(yrs)"
+                android:width="100dp"
+                android:layout_marginTop="20dp"
+                android:textSize="10pt"
+                android:id="@+id/ageTv"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:id="@+id/TvAge"
+                android:maxLength="3"
+                android:inputType="numberDecimal"
+                android:width="250dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Marital Status"
+                android:textSize="10pt"
+                android:layout_marginTop="20dp"
+                android:id="@+id/maritalTv"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:id="@+id/TvMarital"
+                android:width="250dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Gender"
+                android:textSize="10pt"
+                android:id="@+id/genderTv"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:id="@+id/TvGender"
+                android:textSize="10pt"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_maleButton"
+                    android:id="@+id/maleBtn"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_femaleButton"
+                    android:id="@+id/femaleBtn"
+                    android:checked="false" />
+            </RadioGroup>
+        </LinearLayout>
+        </RelativeLayout>
+        <!-- END-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_string"
+            android:width="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/btn_submit"
+            android:background="@drawable/ovalshape"
+            android:layout_marginRight="30dp"
+            android:onClick="goSubmit"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

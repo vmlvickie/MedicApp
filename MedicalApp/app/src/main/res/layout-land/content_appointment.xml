@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mybutton"
+    tools:context="com.octrinsic.medicalapp.Appointment"
+    tools:showIn="@layout/activity_appointment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/scrollView3">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/linearLayout2"
+                android:layout_below="@+id/textView34">
+
+                <Button
+                    android:width="350dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="60dp"
+                    android:text="APPROVE"
+                    android:textColor="#ffffff"
+                    android:textSize="10pt"
+                    android:onClick="onApprove"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/btnApprove"
+                    android:background="@drawable/ovalshape"
+                    />
+
+                <Button
+                    android:width="350dp"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/ovalshape"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/btnReject"
+                    android:text="CANCEL"
+                    android:textColor="#ffffff"
+                    android:textSize="10pt"
+                    android:onClick="onCancel"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:width="350dp"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/ovalshape"
+                    android:id="@+id/btnRefer"
+                    android:textColor="#ffffff"
+                    android:textSize="10pt"
+                    android:onClick="onPatientRefer"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="REFER PATIENT"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Date"
+                android:id="@+id/textView11"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="121dp"
+                android:layout_marginStart="121dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/tvDateDue"
+                android:layout_alignBottom="@+id/textView11"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Facility"
+                android:id="@+id/textView32"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/textView11"
+                android:layout_alignLeft="@+id/textView11"
+                android:layout_alignStart="@+id/textView11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/tvFacility"
+                android:layout_alignBottom="@+id/textView32"
+                android:layout_alignLeft="@+id/tvDateDue"
+                android:layout_alignStart="@+id/tvDateDue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Name: "
+                android:id="@+id/textView34"
+                android:layout_below="@+id/textView32"
+                android:layout_alignLeft="@+id/textView32"
+                android:layout_alignStart="@+id/textView32" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/tvPatientName"
+                android:layout_alignBottom="@+id/textView34"
+                android:layout_toRightOf="@+id/textView32"
+                android:layout_toEndOf="@+id/textView32" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
